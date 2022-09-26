@@ -1,0 +1,318 @@
+ScreenManager:
+    HomePage:
+    Q1:
+    Q2:
+    Q3:
+    Q4:
+    Q5:
+    FinalPage:
+
+
+<HomePage>:
+    name:'home'
+    canvas.before:
+        Rectangle:
+            size:self.size
+            source: 'home.png'
+        
+    
+    Button:
+        on_release:app.root.current = 'q1'
+        size_hint:0.7,0.45
+        pos_hint: {"x":0.15,"y":0.15}
+        background_normal:'btn.png'
+        background_down:'btn.png'
+                  
+<Q1>:
+    name:'q1'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'1.If the initial address is 1111H, Find the ROM memory address of 8051 chip: DS89C420 with 16KB?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a.3FFFH'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'b.4FFFH'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c.5110H'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+        Button:
+            text: 'd.FFFFH'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'home'
+                    background_normal:'backbtn.png'
+                    background_down:'backbtn.png'
+                Button:
+                    on_release:app.root.current = 'q2'
+                    background_normal:'nextbtn.png'
+                    background_down:'nextbtn.png'
+
+<Q2>:
+    name:'q2'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'2.In 8051 microcontroller no of hardware  interrupt is?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            
+        Button:
+            text: 'a.8'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b.4'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c.6'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        Button:
+            text: 'd.10'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q1'
+                    background_normal:'backbtn.png'
+                    background_down:'backbtn.png'
+                Button:
+                    on_release:app.root.current = 'q3'
+                    background_normal:'nextbtn.png'
+                    background_down:'nextbtn.png'
+
+<Q3>:
+    name:'q3'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'3. Who is the father of Computer?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            text_size: self.width, None
+            
+        Button:
+            text: 'a. Albert Einstein'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. Phunsukh Wangdu'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. Elon Musk'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'd. Charles Babbage'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q2'
+                    background_normal:'backbtn.png'
+                    background_down:'backbtn.png'
+                Button:
+                    on_release:app.root.current = 'q4'
+                    background_normal:'nextbtn.png'
+                    background_down:'nextbtn.png'
+
+<Q4>:
+    name:'q4'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'4.Which command is used to create a folder in Linux?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            text_size: self.width, None
+            
+        Button:
+            text: 'a. pip'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. cd..'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. touch'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'd. mkdir'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q3'
+                    background_normal:'backbtn.png'
+                    background_down:'backbtn.png'
+                Button:
+                    on_release:app.root.current = 'q5'
+                    background_normal:'nextbtn.png'
+                    background_down:'nextbtn.png'
+
+<Q5>:
+    name:'q5'
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text:'4.Number of address bus in 8088 microprocessor is?'
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            font_size:self.width/15
+            color: 0,0,0
+            canvas.before:
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            text_size: self.width, None
+            
+        Button:
+            text: 'a. 2 bit'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'b. 5 bit'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'c. 10 bit'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (255,0,0)
+        Button:
+            text: 'd. 20 bit'
+            text_size: self.width, None
+            font_size:self.width/15
+            color: (1,1,0)
+            on_release:self.background_color = (0,255,0)
+            on_release:self.color = (0,0,0)
+        AnchorLayout:
+            anchor_y:'bottom'
+            BoxLayout:
+                Button:
+                    on_release:app.root.current = 'q4'
+                    background_normal:'backbtn.png'
+                    background_down:'backbtn.png'
+                Button:
+                    on_release:app.root.current = 'final'
+                    background_normal:'nextbtn.png'
+                    background_down:'nextbtn.png'
+
+<FinalPage>:
+    name:'final'
+    canvas.before:
+        Rectangle:
+            size:self.size
+            source: 'final.png'
+
+    FloatLayout:
+        Button:
+            size_hint:0.4,0.15
+            pos_hint: {"x":0.03,"y":0.025} 
+            on_release:app.root.current = 'q3'
+            background_normal:'backbtn.png'
+            background_down:'backbtn.png'
+        Button:
+            size_hint:0.4,0.15
+            pos_hint: {"x":0.55,"y":0.025}
+            on_release:app.root.current = 'home'
+            background_normal:'homebtn.png'
+            background_down:'homebtn.png'
